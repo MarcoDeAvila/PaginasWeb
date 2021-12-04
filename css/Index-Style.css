@@ -1,0 +1,218 @@
+@font-face{
+	font-family: titulos;
+	src: url(../media/porto.ttf);
+}
+
+@font-face{
+	font-family: texto;
+	src: url(../media/Poppins-Regular.ttf);
+}
+
+
+:root {
+  --page-content-bgColor: #f0f1f6;
+  --page-content-txtColor: #171616;
+  --page-content-blockColor: #fff;
+  --border-radius: 4px;
+  --box-shadow: 0 0 10px -2px rgba(0, 0, 0, 0.075);
+}
+
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	text-align: center;
+}
+
+.envoltura{
+	width: 1170px;
+	margin: 0 auto;
+}
+
+header{
+	height: 100px;
+	background: #000;
+	width: 100%;
+	z-index: 12;
+	position: fixed;
+}
+
+.logo{
+	width: 30%;
+	float: left;
+	line-height: 100px;
+}
+
+.logo a{
+	text-decoration: none;
+	font-size: 30px;
+	font-family: titulos;
+	color: #fff;
+	letter-spacing: 5px;
+}
+
+nav{
+	float: right;
+	line-height: 100px;
+}
+
+nav a{
+	text-decoration: none;
+	font-family: titulos;
+	letter-spacing: 4px;
+	font-size: 20px;
+	margin: 0 10px;
+	color: #fff;
+	padding: 10px;
+}
+
+nav a:hover{
+	background: #fff;
+	color: #000;
+	border-radius: 2px;
+}
+
+.imagen-area{
+	width: 100%;
+	height: 700px;
+	position: fixed;
+	top: 100px;
+	background-image: url(../media/fondo.jpg);
+	background-size: cover;
+	background-position: center center;
+	
+}
+
+.imagen-area h1{
+	padding-top: 15%;
+	font-size: 8em;
+	font-family: titulos;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	font-weight: normal;
+}
+
+.contenido-area{
+	width: 100%;
+	position: relative;
+	top: 800px;
+	background: #ddd;
+	height: auto;
+	box-shadow: 0 0 15px black;
+}
+
+.contenido-area h2{
+	font-family: titulos;
+	letter-spacing: 4px;
+	padding-top: 30px;
+	font-size: 50px;
+	margin: 0;
+	padding: 1%;
+}
+
+.contenido-area .soy{
+	display: flex;
+	margin: 0;
+	padding: 15px;
+}
+
+.contenido-area .soy .textos{
+	display: inline-block;
+}
+
+.contenido-area .soy img{
+	width: 400px;
+	margin-left: 25px;
+	padding: 60px;
+	border-radius: 75px;
+}
+.contenido-area .soy .textos p{
+	margin: 25px;
+	font-family: texto;
+	line-height: 30px;
+	padding: 30px;
+}
+
+.Pie-pagina{
+	margin-top: 50%;
+	width: 100%;
+	background-color: #000;
+	position: relative;
+}
+
+.Pie-pagina .grupo1{
+	width: 100%;
+	max-width: 1200px;
+	margin: auto;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 50px;
+	padding: 45px 0px;
+	font-family: texto;
+	
+}
+
+.Pie-pagina .grupo1 .box h2{
+	color: #fff;
+	margin-bottom: 25px;
+	font-size: 20px;
+}
+
+.Pie-pagina .grupo1 .box p{
+	color: #efefef;
+	margin-bottom: 10px;
+}
+
+.Pie-pagina .grupo1 .redes a{
+	display: inline-block;
+	text-decoration: none;
+	width: 45px;
+	height: 45px;
+	line-height: 45px;
+	color: #000;
+	margin-right: 10px;
+	background-color: #fff;
+	text-align: center;
+	transition: all 300ms ease;
+	border-radius: 5px;
+}
+
+.Pie-pagina .grupo1 .redes #facebook:hover{
+	color: #3b5998;
+}
+
+.Pie-pagina .grupo1 .redes #instagram:hover{
+	color: #E1306C;
+}
+
+.Pie-pagina .grupo1 .redes #whatsapp:hover{
+	color: #00bb2d;
+}
+
+.Pie-pagina .grupo2{
+	padding: 15px 10px;
+	text-align: center;
+	color: #fff;
+	font-family: texto;
+}
+
+.Pie-pagina .grupo2 small{
+	font-size: 15px;
+}
+
+.soy ul{
+	margin: 0;
+	list-style: none;
+}
+
+.soy ul li{
+	font-family: texto;
+	font-size: 25px;
+}
